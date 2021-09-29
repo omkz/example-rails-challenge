@@ -14,16 +14,16 @@ RSpec.describe "Charges", type: :system do
 
   it "shows 10 items of successful charges item" do
     visit "/charges"
-    expect(page).to have_xpath('//table/tbody[@id="successful-charges"]/tr', count: 10)
+    expect(page).to have_xpath('//table/tbody[@class="successful-charges"]/tr', count: 10)
   end
 
   it "shows 5 items of failed charges item" do
     visit "/charges"
-    expect(page).to have_xpath('//table/tbody[@id="failed-charges"]/tr', count: 5)
+    expect(page).to have_xpath('//table/tbody[@class="failed-charges"]/tr', count: 5)
   end
 
   it "shows 5 items of disputed charges item" do
     visit "/charges"
-    expect(page).to have_xpath('//table/tbody[@id="disputed-charges"]/tr', count: 5)
+    expect(page).to have_xpath('//table/tbody[@class="disputed-charges"]/tr', count: 5)
   end
 end

@@ -14,10 +14,10 @@
  *= require_self
  */
 
-#failed-charges{
+.failed-charges{
     background-color: #FF0000;
 }
 
-#disputed-charges{
+.disputed-charges{
     background-color: #FF5400;
 }
