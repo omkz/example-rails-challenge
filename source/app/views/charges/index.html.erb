@@ -1,5 +1,5 @@
 <h1>Failed Charges</h1>
-<table id="failed-charges">
+<table>
   <thead>
   <tr>
     <th>Name</th>
@@ -7,13 +7,13 @@
     <th>Date</th>
   </tr>
   </thead>
-  <tbody>
+  <tbody id="failed-charges">
   <%= render @charges.failed %>
   </tbody>
 </table>
 
 <h1>Disputed Charges</h1>
-<table id="disputed-charges">
+<table>
   <thead>
   <tr>
     <th>Name</th>
@@ -21,7 +21,7 @@
     <th>Date</th>
   </tr>
   </thead>
-  <tbody>
+  <tbody id="disputed-charges">
   <%= render @charges.disputed %>
   </tbody>
 </table>
@@ -35,7 +35,7 @@
     <th>Date</th>
   </tr>
   </thead>
-  <tbody>
+  <tbody id="successful-charges">
   <%= render @charges.successful %>
   </tbody>
 </table>
