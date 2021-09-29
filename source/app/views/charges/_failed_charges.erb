@@ -1,0 +1,13 @@
+<h1>Failed Charges</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Amount</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody id="failed-charges">
+  <%= render @charges.failed %>
+  </tbody>
+</table>
