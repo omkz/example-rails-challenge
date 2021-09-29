@@ -1,35 +1,5 @@
-<div id="<%= dom_id charge %>" class="scaffold_record">
-  <p>
-    <strong>Created:</strong>
-    <%= charge.created %>
-  </p>
-
-  <p>
-    <strong>Paid:</strong>
-    <%= charge.paid %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= charge.amount %>
-  </p>
-
-  <p>
-    <strong>Currency:</strong>
-    <%= charge.currency %>
-  </p>
-
-  <p>
-    <strong>Refunded:</strong>
-    <%= charge.refunded %>
-  </p>
-
-  <p>
-    <strong>Customer:</strong>
-    <%= charge.customer_id %>
-  </p>
-
-  <p>
-    <%= link_to "Show this charge", charge %>
-  </p>
-</div>
+<tr>
+  <td><%= charge.customer.full_name %></td>
+  <td><%= charge.amount %></td>
+  <td><%= charge.created %></td>
+</tr>

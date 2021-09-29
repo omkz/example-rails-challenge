@@ -1,9 +1,41 @@
-<p id="notice"><%= notice %></p>
+<h1>Failed Charges</h1>
+<table id="failed-charges">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Amount</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @charges.failed %>
+  </tbody>
+</table>
 
-<h1>Charge</h1>
+<h1>Disputed Charges</h1>
+<table id="disputed-charges">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Amount</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @charges.disputed %>
+  </tbody>
+</table>
 
-<div id="charges">
-  <%= render @charges %>
-</div>
-
-<%= link_to "New charge", new_charge_path %>
+<h1>Successful Charges</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Amount</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render @charges.successful %>
+  </tbody>
+</table>
